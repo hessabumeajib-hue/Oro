@@ -1,0 +1,1023 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"),
+       url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"),
+       url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"),
+       url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* =========================
+   ORO FULL CSS
+========================= */
+
+* {
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.85;
+  color: #75695b;
+  background: #f8f5ef;
+  margin: 0;
+}
+
+#page {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+}
+
+a {
+  color: #8A7650;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #b99d70;
+  text-decoration: none;
+  outline: none;
+}
+
+p {
+  margin: 0 0 20px 0;
+  color: #75695b;
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, figure {
+  font-family: 'Playfair Display', serif;
+  color: #7d6948;
+  margin: 0 0 20px 0;
+  font-weight: 600;
+}
+
+img {
+  max-width: 100%;
+}
+
+::-webkit-selection {
+  color: #fff;
+  background: #8A7650;
+}
+::-moz-selection {
+  color: #fff;
+  background: #8A7650;
+}
+::selection {
+  color: #fff;
+  background: #8A7650;
+}
+
+/* Topbar */
+.oro-topbar {
+  background: #8A7650;
+  color: #fffaf2;
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+/* Navigation */
+.fh5co-nav {
+  padding: 18px 0;
+  background: #f8f5ef;
+  border-bottom: 1px solid #e7dece;
+  position: relative;
+}
+
+.fh5co-nav #fh5co-logo {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 4px;
+  font-family: 'Playfair Display', serif;
+}
+
+.fh5co-nav #fh5co-logo a {
+  color: #8A7650;
+}
+
+.fh5co-nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+.fh5co-nav ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+}
+
+.fh5co-nav ul li a {
+  font-size: 13px;
+  padding: 30px 12px;
+  text-transform: uppercase;
+  color: #8A7650;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.fh5co-nav ul li a:hover,
+.fh5co-nav ul li a:focus,
+.fh5co-nav ul li a:active {
+  color: #b99d70;
+}
+
+.fh5co-nav ul li.active > a {
+  color: #b99d70 !important;
+}
+
+/* Hero */
+#fh5co-header,
+.fh5co-bg {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.fh5co-cover {
+  height: 820px;
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+.fh5co-cover .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(59, 49, 37, 0.30);
+}
+
+.fh5co-cover .display-t,
+.fh5co-cover .display-tc {
+  display: table;
+  width: 100%;
+  height: 820px;
+}
+
+#fh5co-header .display-tc,
+.fh5co-cover .display-tc {
+  display: table-cell !important;
+  vertical-align: middle;
+}
+
+#fh5co-header .display-tc h2,
+.fh5co-cover .display-tc h2 {
+  font-family: 'Inter', sans-serif;
+  color: #efe2ca;
+  font-size: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+#fh5co-header .display-tc h1,
+.fh5co-cover .display-tc h1 {
+  color: #fffaf2;
+  font-size: 58px;
+  line-height: 1.15;
+  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 25px;
+}
+
+.hero-text {
+  color: #f4ead8;
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.85;
+  text-align: center;
+}
+
+/* General sections */
+.oro-section,
+.oro-collections-section,
+#fh5co-started,
+#fh5co-footer {
+  padding: 90px 0;
+}
+
+.oro-light-section {
+  background: #fffaf2;
+}
+
+.oro-soft-section {
+  background: #f3ede2;
+}
+
+.fh5co-heading {
+  margin-bottom: 60px;
+}
+
+.fh5co-heading h2 {
+  font-size: 30px;
+  margin-bottom: 18px;
+  line-height: 1.4;
+  color: #8A7650;
+  text-align: center;
+}
+
+.fh5co-heading p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #8b7a64;
+  text-align: center;
+}
+
+.fh5co-heading span {
+  display: block;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-family: 'Inter', sans-serif;
+  color: #b99d70;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* SIDE SECTIONS */
+.oro-side-section {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.oro-side-section .col-md-6 {
+  float: none;
+}
+
+.oro-text-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding-right: 50px;
+  min-height: 480px;
+}
+
+.oro-section-label {
+  display: block;
+  color: #b99d70;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 22px;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.oro-main-title {
+  font-size: 42px;
+  line-height: 1.18;
+  color: #7d6948;
+  margin-bottom: 28px;
+  text-align: left;
+  max-width: 680px;
+}
+
+.oro-text-column p {
+  text-align: left;
+  font-size: 17px;
+  line-height: 1.9;
+  color: #75695b;
+  margin-bottom: 22px;
+  max-width: 650px;
+}
+
+.oro-side-image {
+  border-radius: 8px;
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Collection cards */
+.oro-collections-section {
+  background: #f8f5ef;
+}
+
+.oro-collection-card {
+  display: block;
+}
+
+.oro-collection-image {
+  position: relative;
+  height: 500px;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.oro-collection-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center center;
+  transform: scale(1);
+  transition: transform 0.7s ease;
+  z-index: 1;
+}
+
+.oro-collection-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(59,49,37,0.62), rgba(59,49,37,0.08));
+  z-index: 2;
+}
+
+.oro-collection-content {
+  position: absolute;
+  left: 30px;
+  bottom: 28px;
+  z-index: 3;
+  color: #fffaf2;
+}
+
+.oro-collection-content h3 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #fffaf2;
+}
+
+.oro-collection-label {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #eadfca;
+  font-family: 'Inter', sans-serif;
+}
+
+.oro-collection-card:hover .oro-collection-image::before {
+  transform: scale(1.08);
+}
+
+.oro-collection-card:hover .oro-collection-overlay {
+  background: linear-gradient(to top, rgba(59,49,37,0.75), rgba(59,49,37,0.10));
+}
+
+.oro-collection-card:hover .oro-collection-content h3 {
+  color: #f5e2bb;
+}
+
+/* Product cards */
+.product {
+  margin-bottom: 40px;
+}
+
+.product .product-grid {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 380px;
+  margin-bottom: 18px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.product .product-grid .inner {
+  display: table;
+  height: 380px;
+  width: 100%;
+  opacity: 0;
+  background: rgba(138, 118, 80, 0.18);
+}
+
+.product .product-grid .inner p {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.product .product-grid .inner p .icon {
+  padding: 10px 14px;
+  color: #fff8ed;
+  background: #8A7650;
+  border-radius: 50px;
+}
+
+.product .product-grid .inner p .icon:hover,
+.product .product-grid .inner p .icon:focus {
+  color: #8A7650;
+  background: #fff8ed;
+}
+
+.product .desc h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.product .desc h3 a {
+  color: #8A7650;
+}
+
+.product .desc .price {
+  color: #b59669;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  display: block;
+  text-align: center;
+}
+
+.product:hover .product-grid {
+  box-shadow: 0px 14px 26px -10px rgba(138, 118, 80, 0.28);
+  transform: translateY(-4px);
+}
+
+.product:hover .inner {
+  opacity: 1;
+}
+
+/* Gift banner */
+.oro-gift-banner {
+  padding: 120px 0;
+  position: relative;
+}
+
+.oro-gift-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(59,49,37,0.38);
+}
+
+.oro-gift-content {
+  position: relative;
+  z-index: 2;
+}
+
+.oro-banner-label {
+  color: #efe2ca;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+
+.oro-banner-title {
+  color: #fffaf2;
+  font-size: 46px;
+  margin-top: 14px;
+  text-align: center;
+}
+
+.oro-banner-text {
+  color: #f7ecda;
+  font-size: 18px;
+  line-height: 1.85;
+  text-align: center;
+}
+
+/* Newsletter */
+#fh5co-started {
+  background: #f3ede2;
+}
+
+#fh5co-started .fh5co-heading h2 {
+  color: #8A7650;
+}
+
+#fh5co-started .fh5co-heading p {
+  color: #8b7a64;
+}
+
+.oro-newsletter-group {
+  width: 100%;
+}
+
+#fh5co-started .form-control {
+  background: #fffaf2;
+  border: 1px solid #d8cebc !important;
+  color: #8A7650;
+  font-size: 16px !important;
+  width: 100%;
+  height: 54px;
+  border-radius: 30px;
+  font-family: 'Inter', sans-serif;
+  box-shadow: none;
+}
+
+#fh5co-started .form-control::placeholder {
+  color: #b5a28a;
+}
+
+#fh5co-started .btn {
+  height: 54px;
+  border: none !important;
+  background: #8A7650;
+  color: #fff8ed;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-radius: 30px;
+  width: 100%;
+}
+
+#fh5co-started .btn:hover {
+  background: #a58b62;
+}
+
+/* Buttons */
+.btn {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 12px 26px;
+  border: none;
+}
+
+.btn.btn-lg {
+  padding: 16px 34px !important;
+}
+
+.btn-primary {
+  background: #8A7650;
+  color: #fff8ed;
+  border: 2px solid #8A7650;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background: #a58b62 !important;
+  border-color: #a58b62 !important;
+  color: #fff8ed;
+}
+
+/* Footer */
+#fh5co-footer {
+  background: #8A7650;
+  color: #f7ecda;
+}
+
+#fh5co-footer p,
+#fh5co-footer li,
+#fh5co-footer small {
+  color: #f7ecda;
+  font-family: 'Inter', sans-serif;
+}
+
+#fh5co-footer .fh5co-footer-links {
+  padding: 0;
+  margin: 0;
+}
+
+#fh5co-footer .fh5co-footer-links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+#fh5co-footer .fh5co-footer-links li a {
+  color: #fff8ed;
+}
+
+#fh5co-footer .fh5co-footer-links li a:hover {
+  color: #f1d4a2;
+}
+
+#fh5co-footer .fh5co-widget h3,
+#fh5co-footer h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fffaf2;
+}
+
+#fh5co-footer .copyright .block {
+  display: block;
+}
+
+/* Social */
+.fh5co-social-icons {
+  margin: 0;
+  padding: 0;
+}
+
+.fh5co-social-icons li {
+  list-style: none;
+  display: inline-block;
+}
+
+.fh5co-social-icons li a {
+  display: inline-block;
+  color: #f1d4a2;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.fh5co-social-icons li a i {
+  font-size: 20px;
+}
+
+.fh5co-social-icons li a:hover {
+  color: #fffaf2;
+}
+
+/* Go to top */
+.gototop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.gototop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.gototop a {
+  width: 50px;
+  height: 50px;
+  display: table;
+  background: rgba(138, 118, 80, 0.75);
+  color: #fffaf2;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.gototop a i {
+  height: 50px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.gototop a:hover {
+  background: #c2aa80;
+}
+
+/* Loader */
+.fh5co-loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(../images/loader.gif) center no-repeat #fffaf2;
+}
+
+.js .animate-box {
+  opacity: 0;
+}
+
+/* Mobile nav safety */
+#fh5co-offcanvas {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 270px;
+  height: 100%;
+  background: #f6eee0;
+  z-index: 9999;
+  transform: translateX(100%);
+  transition: transform 0.4s ease;
+  overflow-y: auto;
+  padding: 40px 30px;
+  display: block;
+}
+
+.offcanvas #fh5co-offcanvas {
+  transform: translateX(0);
+}
+
+#fh5co-offcanvas ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#fh5co-offcanvas ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+#fh5co-offcanvas ul li a {
+  color: #8A7650;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.offcanvas #page:after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 9998;
+}
+
+.fh5co-nav-toggle {
+  display: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 991px) {
+  .oro-side-section {
+    display: block;
+  }
+
+  .oro-side-section .col-md-6 {
+    display: block;
+  }
+
+  .oro-text-column {
+    min-height: auto;
+    padding-right: 15px;
+    margin-bottom: 25px;
+    padding-top: 0;
+  }
+
+  .oro-side-image {
+    height: 360px;
+    margin-top: 0;
+  }
+
+  .oro-collection-image {
+    height: 420px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fh5co-nav .menu-1,
+  .fh5co-nav .menu-2 {
+    display: none;
+  }
+
+  .fh5co-nav-toggle {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 22px;
+    z-index: 10000;
+  }
+
+  .fh5co-cover {
+    height: 620px;
+  }
+
+  .fh5co-cover .display-t,
+  .fh5co-cover .display-tc {
+    height: 620px;
+  }
+
+  #fh5co-header .display-tc h1 {
+    font-size: 38px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .oro-main-title {
+    font-size: 32px;
+  }
+
+  .oro-collection-image {
+    height: 360px;
+  }
+
+  .oro-collection-content {
+    left: 22px;
+    bottom: 22px;
+  }
+
+  .oro-collection-content h3 {
+    font-size: 24px;
+  }
+
+  .oro-banner-title {
+    font-size: 34px;
+  }
+
+  .oro-section,
+  .oro-collections-section,
+  #fh5co-started,
+  #fh5co-footer {
+    padding: 60px 0;
+  }
+}
+/* COLLECTIONS PAGE BANNER */
+.oro-page-banner {
+  position: relative;
+  height: 420px;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+}
+
+.oro-page-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(59, 49, 37, 0.38);
+}
+
+.oro-page-banner-content {
+  position: relative;
+  z-index: 2;
+  padding-top: 20px;
+}
+
+.oro-page-banner-content span {
+  display: block;
+  color: #efe2ca;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 14px;
+}
+
+.oro-page-banner-content h1 {
+  color: #fffaf2;
+  font-size: 52px;
+  margin-bottom: 18px;
+}
+
+.oro-page-banner-content p {
+  color: #f4ead8;
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* COLLECTIONS PAGE */
+.oro-products-page {
+  padding: 90px 0;
+  background: #f8f5ef;
+}
+
+.oro-product-section {
+  margin-bottom: 75px;
+}
+
+.oro-product-section:last-child {
+  margin-bottom: 0;
+}
+
+.oro-section-heading {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.oro-section-heading span {
+  display: block;
+  color: #b99d70;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  margin-bottom: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.oro-section-heading h2 {
+  font-size: 30px;
+  color: #8A7650;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.oro-section-heading p {
+  color: #8b7a64;
+  font-size: 16px;
+  text-align: left;
+  max-width: 650px;
+}
+
+/* PRODUCT CARD FOR COLLECTION PAGE */
+.product-card {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: 0.35s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.04);
+  box-shadow: 0px 14px 26px -10px rgba(138, 118, 80, 0.28);
+}
+
+.product-card h3 {
+  margin-top: 16px;
+  margin-bottom: 6px;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.product-card h3 a {
+  color: #8A7650;
+}
+
+.product-card h3 a:hover {
+  color: #b99d70;
+}
+
+.product-card span {
+  display: block;
+  color: #b59669;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .oro-page-banner {
+    height: 320px;
+  }
+
+  .oro-page-banner-content h1 {
+    font-size: 36px;
+  }
+
+  .oro-page-banner-content p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .oro-products-page {
+    padding: 60px 0;
+  }
+
+  .oro-section-heading h2 {
+    font-size: 26px;
+  }
+
+  .product-card img {
+    height: 260px;
+  }
+}
+/* SECTION COLORS */
+
+/* 1. HERITAGE (warm beige) */
+.heritage-section {
+  background: #f8f5ef;
+  padding: 60px 20px;
+  border-radius: 8px;
+}
+
+/* 2. MODERN (clean light grey) */
+.modern-section {
+  background: #f3f3f3;
+  padding: 60px 20px;
+  border-radius: 8px;
+}
+
+/* 3. BRIDAL (soft gold/champagne) */
+.bridal-section {
+  background: #f6efe4;
+  padding: 60px 20px;
+  border-radius: 8px;
+}
